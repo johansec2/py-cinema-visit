@@ -7,10 +7,10 @@ from app.people.cinema_staff import Cleaner
 
 
 def cinema_visit(
-    movie: str,
     customers: list[dict[str, str]],
     hall_number: int,
     cleaner: str,
+    movie: str,
 ) -> None:
     """Simulate a full cinema visit including bar sales and movie session.
 
@@ -38,7 +38,7 @@ def cinema_visit(
         CinemaBar.sell_product(product=customer.food, customer=customer)
 
     # 2. Schedule and conduct the movie session (includes cleaning at the end)
-    hall = CinemaHall(hall_number=hall_number)
+    hall = CinemaHall(number=hall_number)
     hall.movie_session(
         movie_name=movie,
         customers=customer_instances,

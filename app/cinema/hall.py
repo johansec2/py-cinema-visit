@@ -7,13 +7,13 @@ from app.people.cinema_staff import Cleaner
 class CinemaHall:
     """Represents a cinema hall and its sessions."""
 
-    def __init__(self, hall_number: int) -> None:
+    def __init__(self, number: int) -> None:
         """Initialize the hall with its number.
 
         Args:
-            hall_number (int): The unique identifier for the hall.
+            number (int): The unique identifier for the hall.
         """
-        self.hall_number = hall_number
+        self.number = number
 
     def movie_session(
         self,
@@ -29,11 +29,11 @@ class CinemaHall:
             cleaning_staff (Cleaner): The Cleaner instance
             responsible for cleanup.
         """
-        print(f'"{movie_name}" started in hall number {self.hall_number}.')
+        print(f'"{movie_name}" started in hall number {self.number}.')
 
         for customer in customers:
             customer.watch_movie(movie=movie_name)
 
         print(f'"{movie_name}" ended.')
 
-        cleaning_staff.clean_hall(hall_number=self.hall_number)
+        cleaning_staff.clean_hall(number=self.number)
