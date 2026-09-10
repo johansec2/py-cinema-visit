@@ -14,4 +14,4 @@ class CinemaBar:
             product (str): The name of the product being sold.
             customer (Customer): The customer instance buying the product.
         """
-        print(f'Cinema bar sold {product} to {customer.name}.')
+        print(f"Cinema bar sold {product} to {customer.name}.")

@@ -16,7 +16,8 @@ def cinema_visit(
 
     Args:
         movie (str): The name of the movie to be shown.
-        customers (list[dict[str, str]]): List of customer data with 'name' and 'food'.
+        customers (list[dict[str, str]]): List of customer data
+        with 'name' and 'food'.
         hall_number (int): The number of the cinema hall.
         cleaner (str): The name of the cleaner assigned to the hall.
     """
