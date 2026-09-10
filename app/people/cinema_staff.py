@@ -18,4 +18,4 @@ class Cleaner:
         Args:
             hall_number (int): The number of the hall to be cleaned.
         """
-        print(f'Cleaner {self.name} is cleaning hall number {hall_number}.')
+        print(f"Cleaner {self.name} is cleaning hall number {hall_number}.")

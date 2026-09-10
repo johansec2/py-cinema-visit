@@ -24,8 +24,8 @@ def cinema_visit(
     customer_instances: list[Customer] = []
     for cust_data in customers:
         customer_instance = Customer(
-            name=cust_data['name'],
-            food=cust_data['food']
+            name=cust_data["name"],
+            food=cust_data["food"]
         )
         customer_instances.append(customer_instance)
 
