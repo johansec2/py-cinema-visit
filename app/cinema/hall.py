@@ -26,7 +26,7 @@ class CinemaHall:
         Args:
             movie_name (str): The title of the movie.
             customers (list[Customer]): List of Customer instances in the hall.
-            cleaning_staff (Cleaner): The Cleaner instance 
+            cleaning_staff (Cleaner): The Cleaner instance
             responsible for cleanup.
         """
         print(f'"{movie_name}" started in hall number {self.hall_number}.')
